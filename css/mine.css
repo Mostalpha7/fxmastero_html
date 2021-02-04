@@ -1,0 +1,55 @@
+.black1 {
+    color: #111;
+}
+
+.black1_bg {
+    background-color: #111 !important;
+}
+
+.black2 {
+    color: #222;
+}
+
+.black2_bg {
+    background-color: #222;
+}
+
+.bold1 {
+    font-weight: 400;
+}
+
+.bold2 {
+    font-weight: 500;
+}
+
+.bold3 {
+    font-weight: 700;
+}
+
+.boxshadow {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.658), 0 6px 20px 0 rgba(0, 0, 0, 0.541) !important;
+    transition: transform .3s;
+}
+
+.boxshadow:hover {
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.02);
+}
+
+.boxshadow2 {
+    box-shadow: 0 2px 4px 0 rgba(20, 20, 20, 0.541), 0 3px 12px 0 rgba(0, 0, 0, 0.644) !important;
+    transition: transform .3s;
+}
+
+.footer-bg {
+    background-color: #110b0b;
+}
+
+.footer-bg a,
+.footer-bg {
+    font-size: 1.0009rem;
+}
+
+
+/* Elements */
