@@ -390,7 +390,7 @@ h6,
 .h6 {
     margin-bottom: 0.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 h1,
@@ -9888,6 +9888,13 @@ button.bg-dark:focus {
     color: #fff !important;
 }
 
+
+
+.text-grey {
+    color: #8c8c8c;
+
+}
+
 .text-primary {
     color: #fed136 !important;
 }
@@ -10181,7 +10188,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: left;
     color: #fff;
 }

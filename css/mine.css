@@ -51,7 +51,10 @@
 }
 
 .footer-bg {
-    background-color: #110b0b;
+    background-color: #101010;
+}
+.footer .text-white {
+    color: #8c8c8c !important;
 }
 
 .footer-bg a,
@@ -77,6 +80,13 @@
 
 
 
+.testimonials p {
+    font-size:0.8rem;
+}
 
+.testimonial-content {
+    text-transform: none !important;
+    font-size:1rem !important;
+}
 
 /* Elements */
