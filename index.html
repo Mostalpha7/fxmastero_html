@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Fxmaestro </title>
+    <title>Fxmaestro Analysis</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logos/logo.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 
 <body id="page-to">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top black1_bg" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
@@ -30,23 +30,26 @@
                 <i class="fas fa-bars ml-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">About Us</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <ul class="mb-0 float-right d-inline-flex">
                     <li class="nav-items mb-2 mb-md-0  mr-2">
-                        <a href="./login.html" class="btn btn-outline-success px-3">
+                        <a href="./login.html" class="btn btn-outline-success px-4">
                             Login
                         </a>
                     </li>
                     <li>
-                        <a href="./sign-up.html" class="btn btn-danger">
+                        <a href="./sign-up.html" class="btn btn-danger px-4">
                             Sign Up
                         </a>
                     </li>
                 </ul>
-            </div>
         </div>
     </nav>
     <!-- Masthead-->
@@ -56,19 +59,18 @@
                 <div class="col-md-8">
                     <div class="masthead-subheading">
                         <p data-aos="fade-right" class="text-left">
-                            Exclusive market overviews and detailed trade analysis that let you take your trading to the next level.
+                            <span>Exclusive <br>Market Overviews</span> <br> and detailed trade analysis that let you take your trading to the next level.
                         </p>
                     </div>
                     <div class="d-flex justify-content-start">
-                        <a class="btn btn-outline-success text-uppercase js-scroll-trigger mr-3 px-3" href="#services">Pricing</a>
-                        <a class="btn btn-danger text-uppercase js-scroll-trigger px-4" href="#services">Login</a>
+                        <a class="btn btn-success text-uppercase js-scroll-trigger px-5" href="#services">Start Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- Robost tools-->
-    <section class="page-section black1_bg" id="services">
+    <section class="page-section black2_bg" id="services">
         <div class="container">
             <div class="text-center text-white">
                 <p class="mb-4 h1 bold2 mb-4">Robust tools that optimize your trading.</p>
@@ -121,11 +123,12 @@
             </div>
         </div>
     </section>
+
     <!-- Trade signals-->
-    <section class="page-section black2_bg text-white" id="portfolio">
+    <section class="page-section black1_bg text-white" id="portfolio">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 p-5">
                     <div data-aos="fade-right">
                         <p class="h2 bold2">
                             Trade signals that enable you to be in control of your trades as the market conditions change
@@ -145,16 +148,16 @@
         </div>
     </section>
     <!-- Actionable insight -->
-    <section class="page-section black1_bg text-white" id="portfolio">
+    <section class="page-section black2_bg text-white" id="portfolio">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="boxshadow">
-                        <iframe width="463" height="315" src="https://www.youtube.com/embed/pibfiwCQ4fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/pibfiwCQ4fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <!-- <img src="/assets/img/sections/trade-signals.jpg" class="w-100" alt=""> -->
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
+                <div class="col-md-6 p-5" data-aos="fade-left">
                     <div>
                         <p class="h2 bold2">
                             Actionable insights that assist you to trade effectively.
@@ -169,6 +172,56 @@
             </div>
         </div>
     </section>
+
+        <!-- Signals Preview -->
+
+  <section class="page-section black1_bg text-white" id="portfolio">
+        <div class="container my-4">
+                <div class="card-deck mb-5">
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card col-md-1 bg-transparent boxshadow p-3">
+                        <div class="">
+                            <a class="text-white" href="./pricing.html">
+                                <div class="pt-md-5">
+                                    <div class="py-4 text-center">
+                                        <img src="./assets/img/iconleft.png" class=" w-10 text-center p-2" alt="">
+                                        <p class="h6 pb-3">View All Signals</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- End signals preview -->
     <!-- Testimonial -->
     <section class="page-section black2_bg text-white" id="portfolio">
         <div class="container">
@@ -276,7 +329,7 @@
 
     <script>
         AOS.init({
-            offset: 100,
+            offset: 50,
             duration: 400
         });
     </script>
