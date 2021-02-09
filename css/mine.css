@@ -1,3 +1,11 @@
+/*Header Elements Style*/
+
+.my-account {
+    padding-left: 50px;
+}
+
+
+
 .black1 {
     color: #111;
 }
@@ -43,7 +51,10 @@
 }
 
 .footer-bg {
-    background-color: #110b0b;
+    background-color: #101010;
+}
+.footer .text-white {
+    color: #8c8c8c !important;
 }
 
 .footer-bg a,
@@ -67,5 +78,15 @@
     color: rgb(221, 213, 213) !important;
 }
 
+
+
+.testimonials p {
+    font-size:0.8rem;
+}
+
+.testimonial-content {
+    text-transform: none !important;
+    font-size:1rem !important;
+}
 
 /* Elements */

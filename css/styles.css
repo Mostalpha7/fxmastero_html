@@ -54,6 +54,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
 }
 
 article,
@@ -389,7 +390,7 @@ h6,
 .h6 {
     margin-bottom: 0.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 h1,
@@ -4719,7 +4720,7 @@ input[type='button'].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #1a1a1a;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -4756,8 +4757,14 @@ input[type='button'].btn-block {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
+
 }
 
+.card p {
+    color:#eee;
+    text-transform: uppercase;
+    font-size:1em;
+}
 .card-title {
     margin-bottom: 0.75rem;
 }
@@ -9881,6 +9888,13 @@ button.bg-dark:focus {
     color: #fff !important;
 }
 
+
+
+.text-grey {
+    color: #8c8c8c;
+
+}
+
 .text-primary {
     color: #fed136 !important;
 }
@@ -10174,15 +10188,14 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.98rem;
+    font-size: 1rem;
+    text-align: left;
     color: #fff;
-    letter-spacing: 0.0625em;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: green;
-    font-weight: bold;
+    color: #28a745;
 }
 
 @media(min-width: 992px) {
@@ -10246,6 +10259,8 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
 }
 
+
+
 @media(min-width: 768px) {
     header.masthead {
         padding-top: 12rem;
@@ -10262,6 +10277,19 @@ header.masthead .masthead-heading {
         line-height: 4.5rem;
         margin-bottom: 4rem;
     }
+
+    header.masthead .masthead-subheading p {
+        font-size: 2rem;
+        line-height: 150%;
+        max-width: 
+
+}
+
+header.masthead .masthead-subheading p span {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 100%;
+}
 }
 
 #portfolio .portfolio-item {
