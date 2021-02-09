@@ -28,12 +28,13 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+            <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars ml-1"></i>
+            </button> <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars ml-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">About Us</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pricing.html">Pricing</a></li>
@@ -81,7 +82,7 @@
                                             Sign up for premium
                                         </p>
 
-                                        <form @submit.prevent="pushFree">
+                                        <form id="onlyForm">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
                                                 <input @change="welcome" v-model="email" required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -154,12 +155,13 @@
                 </div>
                 <div class="col-md-3 text-left text-white mt-5">
                     <p class="h5 ">
-                        Quick Menu
+                        Quick Links
                     </p>
                     <a href="/" class="d-block">Home </a>
                     <a href="#" class="d-block">Faq</a>
                     <a href="#" class="d-block">Our Courses</a>
                     <a href="#" class="d-block">Events</a>
+                    <a href="./disclaimer.html" class="d-block">Disclaimer</a>
                 </div>
                 <div class="col-md-3 text-left text-white mt-5">
                     <p class="h5 ">
@@ -193,6 +195,12 @@
             duration: 400
         });
     </script> -->
+    <script>
+        document.getElementById('onlyForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = "/free_dashboard.html";
+        })
+    </script>
 </body>
 
 </html>

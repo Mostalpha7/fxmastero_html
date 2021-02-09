@@ -20,6 +20,68 @@
     <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 27px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 8px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #28a745;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #28a745;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
 </head>
 
 <body id="page-to">
@@ -27,12 +89,11 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+            <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars ml-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">About Us</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/pricing.html">Pricing</a>
@@ -55,7 +116,6 @@
 
     <!-- Trade signals-->
     <section class="page-section black2_bg text-white" id="portfolio">
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12 py-4 my-3">
@@ -69,14 +129,15 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-10 col-xl-8">
-                    <!-- <div class="text-center mb-4">
+
+                    <div class="text-center mb-4">
                         <span class="text-white ml-md-5 pl-md-3">Monthly</span>
                         <label class="switch mx-2">
-                            <input type="checkbox" checked @change="swapPrice">
+                            <input type="checkbox" checked id="swith">
                             <span class="slider round"></span>
                         </label>
                         <span class="text-white">Yearly (save 25%)</span>
-                    </div> -->
+                    </div>
                     <div class="card-group">
                         <div class="card mb-5 mb-md-0 boxshadow border-0 hoverborder black1_bg">
                             <div class="bg-success text-white card-header py-0 p-4">
@@ -126,11 +187,11 @@
                                     </div>
                                 </div>
                                 <div class="text-center  mt-auto">
-                                    <router-link to="/registerpremium">
+                                    <a href="./sign-up.html">
                                         <button class="btn btn-block btn-outline-success px-3">
                                             Select Plan
                                         </button>
-                                    </router-link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +205,7 @@
                                     <span>
                                         $
                                     </span>
-                                    <span class="h1 text-white font-weight-bold">75</span>
+                                    <span id="premuimPrice" class="h1 text-white font-weight-bold">75</span>
                                     <span>/ Month</span>
                                 </p>
                             </div>
@@ -199,21 +260,16 @@
                                     <!-- </div> -->
                                 </div>
                                 <div class="text-center  mt-auto">
-                                    <router-link to="/registerpremium">
+                                    <a href="./sign-up.html" to="/registerpremium">
                                         <button class="btn btn-block btn-outline-success px-3">
                                             Select Plan
                                         </button>
-                                    </router-link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-
-            <div class="container">
-
             </div>
     </section>
 
@@ -243,12 +299,13 @@
                 </div>
                 <div class="col-md-3 text-left text-white mt-5">
                     <p class="h5 ">
-                        Quick Menu
+                        Quick Links
                     </p>
                     <a href="/" class="d-block">Home </a>
                     <a href="#" class="d-block">Faq</a>
                     <a href="#" class="d-block">Our Courses</a>
                     <a href="#" class="d-block">Events</a>
+                    <a href="./disclaimer.html" class="d-block">Disclaimer</a>
                 </div>
                 <div class="col-md-3 text-left text-white mt-5">
                     <p class="h5 ">
@@ -282,6 +339,18 @@
             duration: 400
         });
     </script> -->
+    <script>
+        var theSwitch = document.getElementById("swith");
+        var premuimPrice = document.getElementById('premuimPrice').innerHTML;
+        theSwitch.onchange = () => {
+            if (premuimPrice == 75) {
+                premuimPrice = 100;
+            } else {
+                premuimPrice = 75
+            }
+            document.getElementById('premuimPrice').innerHTML = premuimPrice
+        }
+    </script>
 </body>
 
 </html>

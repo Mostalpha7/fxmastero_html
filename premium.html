@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fxmaestro - Premium </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logos/logo.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/mine.css">
+    <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <style>
+        .third .nav-link.active {
+            background-color: transparent !important;
+            color: black;
+            border-bottom: 3px solid #037A14;
+        }
+    </style>
+
+</head>
+
+<body id="page-to">
+    <!-- Navigation-->
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/">
+                <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
+            <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./premium.html">Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Forex Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Correlation charts</a>
+                            <a class="dropdown-item" href="#">Heat maps</a>
+                            <a class="dropdown-item" href="#">Trend Meter</a>
+                            <a class="dropdown-item" href="#">Stock Scanner</a>
+                            <a class="dropdown-item" href="#">Market Sentiment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">
+                            Market Trend Dynamics
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">
+                            Technical Analysis
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="./all_signals.html">
+                            Trade Signals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">
+                            Library
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="./trading_room.html">
+                            Trading Room
+                        </a>
+                    </li>
+
+                    <li class="nav-items mb-2 mb-md-0  mr-2">
+                        <a href="##" class="btn btn-success px-3">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section  black2_bg text-white">
+
+        <div class="py-5">
+
+            <div class="container my-4">
+                <div class="card-deck mb-5">
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
+
+                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card col-md-1 bg-transparent boxshadow p-3">
+                        <div class="">
+                            <a class="text-white" href="./all_signals.html">
+                                <div class="pt-md-5">
+                                    <div class="py-4 text-center">
+                                        <img src="./assets/img/iconleft.png" class=" w-10 text-center p-2" alt="">
+                                        <p class="h6 pb-3">View All Signals</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Second -->
+            <div class="container mb-3 mb-md-5">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 boxshadow2">
+                            <div class="dropdown border-0 card-header py-3 px-3 show d-flex justify-content-between" style="background: rgba(12, 91, 23, 0.1);">
+                                <div data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="text-dark">
+                                        Technical Analysis
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="collapse maintainHeight border-0 show" id="collapseExample">
+                                <div class="border-0 card card-body bg-transparent">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                    <br> <br> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                    <br> <br> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                    <br> <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="boxshadow2">
+                            <div class="card rounded-0 border-0">
+                                <div class=" dropdown card-header p-3 show d-flex justify-content-between" style="background: rgba(12, 91, 23, 0.1);">
+                                    <div data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <span class="text-dark">
+                                            Fundamental Analysis
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="collapse show maintainHeight" id="collapseExample1">
+                                    <div class="card card-body bg-transparent">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        <br> <br> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+                                        <br> <br> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        <br> <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third -->
+            <div class="container third">
+                <div class="card-deck">
+                    <div class="col-md-8 p-0 card border-0  mb-4">
+                        <div class="card-header text-dark font-weight-bold" style="background: rgba(12, 91, 23, 0.1);">
+                            Stock Updates
+                        </div>
+                        <div class="card-body maintainHeight">
+                            <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark active" id="pills-active-tab" data-toggle="pill" href="#pills-active" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <span class="text-white">Active
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" id="pills-gainers-tab" data-toggle="pill" href="#pills-gainers" role="tab" aria-controls="pills-gainers" aria-selected="false">
+                                        <span class="text-white">
+                                            Gainers
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                        <span class="text-white">
+                                            Contact
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-active" role="tabpanel" aria-labelledby="pills-active-tab">
+                                    <img src="./assets/img/css-chart-elements.png" class="w-100 mb-3" alt="">
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-gainers" role="tabpanel" aria-labelledby="pills-gainers-tab">
+                                    <img src="./assets/img/css-chart-elements.png" class="w-100 mb-3" alt="">
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <img src="./assets/img/css-chart-elements.png" class="w-100 mb-3" alt="">
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow border-bottom mb-2">
+                                        <div class="p-2 py-0 d-flex align-items-center maintainHeight">
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 text-muted font-weight-bold">OCGN</p>
+                                                <small class="text-muted">Ocugen Inc</small>
+                                            </div>
+                                            <div class="p-2">
+                                                <p>2.25<sup class="font-weight-bolder text-danger">D</sup></p>
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="text-success m-0 text-right">+27.84%</p>
+                                                <p class="text-success m-0 text-right">+0.49</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0  card border-0 pb-0 mb-4">
+                        <div class="card-header  text-dark font-weight-bold" style="background: rgba(12, 91, 23, 0.1);">
+                            Central bank news
+                        </div>
+                        <div class="card-body mb-0 maintainHeight">
+                            The Central Bank of Nigeria (CBN) is the Central bank and apex monetary authority of Nigeria established by the CBN Act of 1958 and commenced operations on July 1, 1959. The CBN Act was amended in 1991, 1993, 1997, 1998, 1999 and 2007. d in 19
+                            <hr class="text-muted mb-0" style="height: .15rem; background-color: #444">
+                        </div>
+                        <div class="card-body mb-0 maintainHeight">
+                            The Central Bank of Nigeria (CBN) is the Central bank and apex monetary authority of Nigeria established by the CBN Act of 1958 and commenced operations on July 1, 1959. The CBN Act was amended in 1991, 1993, 1997, 1998, 1999 and 2007. d in 19
+                            <hr class="text-muted mb-0" style="height: .15rem; background-color: #444">
+                        </div>
+                        <div class="card-body mb-0 maintainHeight">
+                            The Central Bank of Nigeria (CBN) is the Central bank and apex monetary authority of Nigeria established by the CBN Act of 1958 and commenced operations on July 1, 1959. The CBN Act was amended in 1991, 1993, 1997, 1998, 1999 and 2007. d in 19
+                            <hr class="text-muted mb-0" style="height: .15rem; background-color: #444">
+                        </div>
+                        <div class="card-body mb-0 maintainHeight">
+                            The Central Bank of Nigeria (CBN) is the Central bank and apex monetary authority of Nigeria established by the CBN Act of 1958 and commenced operations on July 1, 1959. The CBN Act was amended in 1991, 1993, 1997, 1998, 1999 and 2007. d in 19
+                            <hr class="text-muted mb-0" style="height: .15rem; background-color: #444">
+                        </div>
+                        <div class="black1_bg">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="##" class="font-weight-bold d-block text-white pb-3">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-arrow-right font-weight-normal"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer py-4 footer-bg">
+        <div class="container">
+            <div class="row align-items-">
+                <div class="col-md-3 text-left">
+                    <img src="./assets/img/logos/logo.png" alt="">
+                    <p class="h5 text-white">
+                        Have a Question?
+                    </p>
+                    <a href="/" class="d-block">www.forexmaestros.com</a>
+                    <a href="tel:23409404895" class="d-block">23454040343</a>
+                    <a href="tel:23409404895" class="d-block">23454040343</a>
+                    <a href="mailto:info@forexmaestros.com" class="d-block">info@forexmaestros.com</a>
+                </div>
+                <div class="col-md-3 text-left text-white mt-5">
+
+                    <p class="h5 ">
+                        You want trade alert?
+                    </p>
+                    <p class="my-0">Subscriber to Forex Maestros updates and trade alert.
+                    </p>
+                    <p class="my-0">Enter email address </p>
+                    <p class="my-0">Connect with us</p>
+                </div>
+                <div class="col-md-3 text-left text-white mt-5">
+                    <p class="h5 ">
+                        Quick Links
+                    </p>
+                    <a href="/" class="d-block">Home </a>
+                    <a href="#" class="d-block">Faq</a>
+                    <a href="#" class="d-block">Our Courses</a>
+                    <a href="#" class="d-block">Events</a>
+                    <a href="./disclaimer.html" class="d-block">Disclaimer</a>
+                </div>
+                <div class="col-md-3 text-left text-white mt-5">
+                    <p class="h5 ">
+                        Contact Us
+                    </p>
+                    <a href="tel:23409404895" class="d-block">+23454040343</a>
+                    <a href="mailto:contact@domain.com" class="d-block">info@forexmaestros.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 400
+        });
+    </script> -->
+</body>
+
+</html>

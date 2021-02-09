@@ -28,7 +28,7 @@
 
 .boxshadow {
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.658), 0 6px 20px 0 rgba(0, 0, 0, 0.541) !important;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .boxshadow:hover {
@@ -39,7 +39,7 @@
 
 .boxshadow2 {
     box-shadow: 0 2px 4px 0 rgba(20, 20, 20, 0.541), 0 3px 12px 0 rgba(0, 0, 0, 0.644) !important;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .footer-bg {
@@ -49,6 +49,22 @@
 .footer-bg a,
 .footer-bg {
     font-size: 1.0009rem;
+}
+
+.active {
+    color: green !important;
+}
+
+.jumbotron {
+    background-color: rgba(17, 17, 17, 0.965) !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.maintainHeight {
+    overflow-y: auto;
+    background-color: #111;
+    color: rgb(221, 213, 213) !important;
 }
 
 
