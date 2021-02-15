@@ -35,21 +35,21 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">About Us</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Contact</a></li>
-                    
+
                 </ul>
             </div>
             <ul class="mb-0 float-right d-inline-flex">
-                    <li class="nav-items mb-2 mb-md-0  mr-2">
-                        <a href="./login.html" class="btn btn-outline-success px-4">
-                            Login
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./sign-up.html" class="btn btn-danger px-4">
-                            Sign Up
-                        </a>
-                    </li>
-                </ul>
+                <li class="nav-items mb-2 mb-md-0  mr-2">
+                    <a href="./login.html" class="btn btn-outline-success px-4">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="./sign-up.html" class="btn btn-danger px-4">
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- Masthead-->
@@ -175,50 +175,56 @@
     </section>
 
     <!-- Signals Preview -->
-  <section class="page-section black1_bg text-white" id="portfolio">
+    <section class="page-section black1_bg text-white" id="portfolio">
         <div class="container my-4">
-                <div class="card-deck mb-5">
-                    <div class="card  bg-transparent boxshadow p-3">
-                        <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+            <div class="card-deck mb-5">
+                <div class="card  bg-transparent boxshadow p-3">
+                    <div class="">
+                        <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
 
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
-                            </button>
-                        </div>
-
+                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline">Signal</span>
+                        </button>
                     </div>
-                    <div class="card  bg-transparent boxshadow p-3">
-                        <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
 
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
-                            </button>
-                        </div>
+                </div>
+                <div class="card  bg-transparent boxshadow p-3">
+                    <div class="">
+                        <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
 
+                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline">Signal</span>
+                        </button>
                     </div>
-                    <div class="card  bg-transparent boxshadow p-3">
-                        <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
 
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
-                            </button>
-                        </div>
+                </div>
+                <div class="card  bg-transparent boxshadow p-3">
+                    <div class="">
+                        <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
 
+                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline">Signal</span>
+                        </button>
                     </div>
-                    <div class="card col-md-1 bg-transparent boxshadow p-3">
-                        <div class="">
-                            <a class="text-white" href="./pricing.html">
-                                <div class="pt-md-5">
-                                    <div class="py-4 text-center">
-                                        <p class="h6 pb-3 small">View All Signals</p>
-                                        <img src="./assets/img/iconleft.png" class=" w-10 text-center p-2 m-auto" alt="">
-                                    </div>
+
+                </div>
+                <div class="card col-md-1 bg-transparent boxshadow p-3">
+                    <div class="">
+                        <a class="text-white" href="./pricing.html">
+                            <div class="pt-md-5">
+                                <div class="py-4 text-center">
+                                    <p class="h6 pb-3 small">View All Signals</p>
+                                    <img src="./assets/img/iconleft.png" class=" w-10 text-center p-2 m-auto" alt="">
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- End signals preview -->
@@ -265,6 +271,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer-->
     <footer class="footer py-4 footer-bg">

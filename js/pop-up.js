@@ -18,3 +18,22 @@ magnify_area.addEventListener('mousemove', function(event) {
 magnify_area.addEventListener('mouseleave', function() {
     magnify_image.style.transform = 'translate(-50%, -50%) scale(1)'
 })
+
+// Open screen
+function createPopupWin(pageURL, pageTitle, popupWinWidth, popupWinHeight) {
+    var left = (screen.width - popupWinWidth) / 2
+    var top = (screen.height - popupWinHeight) / 4
+
+    var myWindow = window.open(
+        pageURL,
+        pageTitle,
+        'resizable=yes, width=' +
+        popupWinWidth +
+        ', height=' +
+        popupWinHeight +
+        ', top=' +
+        top +
+        ', left=' +
+        left
+    )
+}
