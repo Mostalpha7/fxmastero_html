@@ -17,14 +17,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/mine.css">
-    <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <style>
-        .card p {
-            text-transform: initial !important;
-        }
-        
         .switch {
             position: relative;
             display: inline-block;
@@ -100,7 +94,7 @@
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/pricing.html">Pricing</a>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Contact</a></li>
 
@@ -123,161 +117,97 @@
 
     <!-- Trade signals-->
     <section class="page-section black2_bg text-white mt-5" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 py-4 my-3">
-                    <p class="h1 font-weight-bold text-center">
-                        Our Pricing
-                    </p>
+        <div class="py-3 mt-3 ">
+            <div class="row no-gutters justify-content-center align-content-end">
+                <div class="col-md-7">
+                    <div class="py-5 px-2 boxshadow border-0 hoverborder black1_bg texwhite">
+                        <p class="h1 text-center font-weight-bold mb-4">
+                            Fxmaestros Premuim Pricing
+                        </p>
+                        <p class="lead active text-center  font-weight-">
+                            Price: $ <span id="premuimPrice">
+                                900
+                            </span>
+                            <span>/ year</span>
+                        </p>
+                        <div class="px-4">
+                            <p class="h4 font-weight-normal">
+                                Features
+                            </p>
+                            <br>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 bold1 mb-0 text-muted">
+                                            Real-time stock updates on.
+                                        </p>
+                                        <p class="mb-0">
+                                            <i class="fa fa-check font-weight-bold text-success"></i>
+                                        </p>
+                                    </div>
+                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-end">
+                                <div class="col-md-4">
+                                    <a href="./sign-up-premium.html">
+                                        <button style="background-color: green;" class="mt-4 btn btn-block btn-success">Continue</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container my-5">
-
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-xl-8">
-
-                    <div class="text-center mb-5">
-                        <span class="text-white ml-md-5 pl-md-3">Monthly</span>
-                        <label class="switch mx-2">
-                            <input type="checkbox" checked id="swith">
-                            <span class="slider round"></span>
-                        </label>
-                        <span class="text-white">Yearly (save 25%)</span>
-                    </div>
-                    <div class="card-group">
-                        <div class="card mb-5 mb-md-0 boxshadow border-0 hoverborder black1_bg">
-                            <div class="bg-success text-white card-header py-0 p-4">
-                                <p class="font-weight-bold text-center my-1">
-                                    Free
-                                </p>
-                                <p class="py-0 my-0 text-center">
-                                    <span>$</span>
-                                    <span class="h1 text-white font-weight-bold">0</span>
-                                    <span>/ Month</span>
-                                </p>
-                            </div>
-                            <div class="card-body section1 px-5 py-4 pb-5 px-4 d-flex align-items- flex-column">
-                                <div class="mb-4">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <p class="h6 bold1 mb-0 text-muted">
-                                                Real-time forex news
-                                            </p>
-                                            <p class="mb-0">
-                                                <i class="fa fa-check font-weight-bold text-success"></i>
-                                            </p>
-                                        </div>
-                                        <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    </div>
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <p class="h6 bold1 mb-0 text-muted">
-                                                Real-time stock updates on
-                                            </p>
-                                            <p class="mb-0">
-                                                <i class="fa fa-check font-weight-bold text-success"></i>
-                                            </p>
-                                        </div>
-                                        <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    </div>
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <p class="h6 bold1 mb-0 text-muted">
-                                                Real-time stock updates on
-                                            </p>
-                                            <p class="mb-0">
-                                                <i class="fa fa-check font-weight-bold text-success"></i>
-                                            </p>
-                                        </div>
-                                        <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    </div>
-                                </div>
-                                <div class="text-center  mt-auto">
-                                    <a href="./free_onboarding.html">
-                                        <button class="btn btn-block btn-outline-success px-3">
-                                            Select Plan
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mx-2"></div>
-                        <div class="card mb-5 mb-md-0 boxshadow border-0 black1_bg hoverborder">
-                            <div class="bg-success text-white card-header py-0 p-4">
-                                <p class="font-weight-bold text-center my-1">
-                                    Premium
-                                </p>
-                                <p class="py-0 my-0 text-center">
-                                    <span>
-                                        $
-                                    </span>
-                                    <span id="premuimPrice" class="h1 text-white font-weight-bold">75</span>
-                                    <span>/ Month</span>
-                                </p>
-                            </div>
-                            <div class="card-body section1 px-5 py-4 pb-5 px-4 d-flex align-items- flex-column">
-                                <div class="mb-4">
-                                    <!-- <div> -->
-                                    <div class="d-flex justify-content-between">
-                                        <p class="h6 bold1 mb-0 text-muted">
-                                            Real-time forex news
-                                        </p>
-                                        <p class="mb-0">
-                                            <i class="fa fa-check font-weight-bold text-success"></i>
-                                        </p>
-                                    </div>
-                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="h6 bold1 mb-0 text-muted">
-                                            Real-time forex news
-                                        </p>
-                                        <p class="mb-0">
-                                            <i class="fa fa-check font-weight-bold text-success"></i>
-                                        </p>
-                                    </div>
-                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="h6 bold1 mb-0 text-muted">
-                                            Real-time forex news
-                                        </p>
-                                        <p class="mb-0">
-                                            <i class="fa fa-check font-weight-bold text-success"></i>
-                                        </p>
-                                    </div>
-                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="h6 bold1 mb-0 text-muted">
-                                            Real-time forex news
-                                        </p>
-                                        <p class="mb-0">
-                                            <i class="fa fa-check font-weight-bold text-success"></i>
-                                        </p>
-                                    </div>
-                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="h6 bold1 mb-0 text-muted">
-                                            Real-time forex news
-                                        </p>
-                                        <p class="mb-0">
-                                            <i class="fa fa-check font-weight-bold text-success"></i>
-                                        </p>
-                                    </div>
-                                    <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    <!-- </div> -->
-                                </div>
-                                <div class="text-center  mt-auto">
-                                    <a href="./premuim_onboarding.html" to="/registerpremium">
-                                        <button class="btn btn-block btn-outline-success px-3">
-                                            Select Plan
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
     <!-- Footer-->
@@ -324,8 +254,29 @@
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
+    <!-- Payment Modals-->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Paystack Payment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Payment method would show here
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" id="paymentconfirmButton" data-dismiss="modal" class="btn btn-success">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JS-->
@@ -338,14 +289,6 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 400
-        });
-    </script> -->
     <script>
         var theSwitch = document.getElementById("swith");
         var premuimPrice = document.getElementById('premuimPrice').innerHTML;
@@ -358,6 +301,7 @@
             document.getElementById('premuimPrice').innerHTML = premuimPrice
         }
     </script>
+
 </body>
 
 </html>
