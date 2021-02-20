@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Fxmaestro - Sign Up </title>
+    <title>Pricing | Fxmaestros </title>
     <link rel="icon" type="image/x-icon" href="assets/img/logos/logo.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -17,13 +17,72 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/mine.css">
-    <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 27px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 8px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #28a745;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #28a745;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
 
 </head>
 
 <body id="page-to">
-    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top black1_bg" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="./index.html">
@@ -47,8 +106,8 @@
                         Login
                     </a>
                 </li>
-                <li class="active">
-                    <a href="./select_plan.html" class="btn btn-danger px-4">
+                <li class>
+                    <a href="./pricing.html" class="btn btn-danger px-4">
                         Sign Up
                     </a>
                 </li>
@@ -56,57 +115,52 @@
         </div>
     </nav>
 
-    <section class="page-section  black1_bg text-white">
-        <div class="black1_bg py-5 mt-4">
+    <!-- Trade signals-->
+    <section class="page-section black2_bg text-white mt-5" id="portfolio">
+        <div class="py-3 mt-3 ">
             <div class="row no-gutters justify-content-center align-content-end">
-                <div class="col-md-5 d-none bg-success" style="background-image:url('./assets/img/sections/register-image.jpg'); background-repeat: no-repeat; background-size: cover;">
-                    <div class="flex-even  d-none d-md-block">
-                        <div class="row py-5 justify-content-center">
-                            <div class="col-md-9 py-5 text-white">
-                                <br>
-                                <div class="">
-                                    <p class="h2 font-weight-bold mb-5 ">
-                                        Welcome to FXMastero
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="flex-even py-5 bg-white">
-                        <div class="row py-md-5 justify-content-center">
+                <div class="col-md-7">
+                    <div class="py-5 px-2 boxshadow border-0 hoverborder black1_bg texwhite">
+                       
+                     <div class="row py-md-5 justify-content-center">
                             <div class="col-md-9 px-4 px-md-0">
-                                <div class=" text-dark">
+                                <div class=" text-light">
                                     <div class="">
-                                        <p class="h2 text-center font-weight-bold mb-3">
-                                            Sign up
+                                        <p class="h2 text-center font-weight-bold mb-5">
+                                            Create Account
                                         </p>
 
-                                        <form id="onlyForm">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input @change="welcome" v-model="email" required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <form id="makepayment">
+                                            <div class="mb-5 row">
+                                                <div class="col">
+                                                    <input required type="text" class="form-control" placeholder="Enter your First Name">
+                                                </div>
+                                                <div class="col">
+                                                <input required type="text" class="form-control" placeholder="Enter your Last Name">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1">Phone Number</label>
-                                                <input @change="welcome" v-model="phone" required type="mobile" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1">Password</label>
-                                                <input @change="welcome" v-model="password" required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            
+                                            <div class="mb-5">
+                                                <input required type="email" class="form-control" placeholder="Your Email address">
                                             </div>
-
-                                            <button data-toggle="modal" :disabled="disabled" data-target="#exampleModalCenterPremuim" type="submit" class="mt-4 btn btn-block btn-success">Sign Up</button>
+                                            
+                                            <div class="mb-5">
+                                                <input required type="password" placeholder="Enter password" class="form-control">
+                                            </div>
+                                            <div class="row justify-content-center my-3">
+                                                <div class="col-md-12">
+                                                    <a href="./verify-email.html"><button style="background-color: green;" class=" btn btn-block btn-success btn-lg">Create Account</button></a> 
+                                                </div>
+                                            </div>
                                         </form>
                                         <p class="mt-3 text-center">
                                             <span class="text-danger">
-                                                <a class="text-danger" href="./forgot_password.html">
-                                                    Forgot password
+                                                <a class="text-dark" href="./forgot_password.html">
+                                                    Forgot password?
                                                 </a>
                                             </span>
-                                            <span class="d-inline-block mx-2">||</span>
-                                            <span class="text-dark">Already have an account
+                                            <span class="d-inline-block mx-2 text-dark">|</span>
+                                            <span class="text-dark">Already have an account?
                                                 <a class="text-success" href="./login.html">
                                                     Login
                                                 </a>
@@ -117,17 +171,10 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
+        </div>
     </section>
 
     <!-- Footer-->
@@ -174,8 +221,6 @@
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
-
 
 
     <!-- Bootstrap core JS-->
@@ -188,20 +233,19 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script>
-        AOS.init({
-            offset: 100,
-            duration: 400
-        });
-    </script> -->
-    <script>
-        document.getElementById('onlyForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            window.location.href = "/free_dashboard.html";
-        })
+        var theSwitch = document.getElementById("swith");
+        var premuimPrice = document.getElementById('premuimPrice').innerHTML;
+        theSwitch.onchange = () => {
+            if (premuimPrice == 75) {
+                premuimPrice = 100;
+            } else {
+                premuimPrice = 75
+            }
+            document.getElementById('premuimPrice').innerHTML = premuimPrice
+        }
     </script>
+
 </body>
 
 </html>

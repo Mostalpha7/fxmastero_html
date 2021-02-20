@@ -11,7 +11,7 @@
 }
 
 .black1_bg {
-    background-color: #111 !important;
+    background-color: #141414 !important;
 }
 
 .black2 {
@@ -35,14 +35,17 @@
 }
 
 .boxshadow {
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.658), 0 6px 20px 0 rgba(0, 0, 0, 0.541) !important;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7) !important;
     transition: transform 0.3s;
+    border-radius: 20px;
 }
 
 .boxshadow:hover {
-    -ms-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    transform: scale(1.02);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    border: 1px solid rgba(0,128,0,0.5) !important;
+    border-radius: 20px;
 }
 
 .boxshadow2 {
