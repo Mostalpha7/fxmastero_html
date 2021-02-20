@@ -28,6 +28,7 @@
         }
     </style>
 
+    <link rel="stylesheet" href="./css/pop-up.css">
 </head>
 
 <body id="page-to">
@@ -82,19 +83,19 @@
                     </li>
                 </ul>
             </div>
-             <ul class="mb-0 float-right d-inline-flex">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            My Account
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Profile</a>
-                            <a class="dropdown-item" href="#">Billing & Invoices</a>
-                            <a class="dropdown-item" href="#">Support</a>
-                            <a class="dropdown-item" href="#">Log out</a>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="mb-0 float-right d-inline-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Billing & Invoices</a>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -106,27 +107,41 @@
                 <div class="card-deck mb-5">
                     <div class="card  bg-transparent boxshadow p-3">
                         <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+                            <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+                            <!-- <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt=""> -->
 
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            <button onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" class="btn mt-2 px-md-4 btn-success">Expand<span
+                                    class=" ml-1 d-none d-lg-inline">Signal</span>
+                            </button>
+                            <!-- <button class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span
+                                    class=" ml-1 d-none d-lg-inline">Signal</span>
+                            </button> -->
+
+                        </div>
+
+                    </div>
+                    <div class="card  bg-transparent boxshadow p-3">
+                        <div class="">
+                            <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+
+                            <button onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" class="btn mt-2 px-md-4   btn-success">Expand<span
+                                    class="ml-1 d-none d-lg-inline">Signal</span>
                             </button>
                         </div>
 
                     </div>
                     <div class="card  bg-transparent boxshadow p-3">
                         <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+                            <img onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
 
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
-                            </button>
-                        </div>
-
-                    </div>
-                    <div class="card  bg-transparent boxshadow p-3">
-                        <div class="">
-                            <img @click="switchTechnical" data-toggle="modal" data-target="#exampleModalCenter" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
-
-                            <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" data-toggle="modal" data-target="#exampleModalCenter">Expand<span class="d-none d-lg-inline">Signal</span>
+                            <button onclick="createPopupWin('popup.html', 
+                            'popup', 1200, 650);" class="btn mt-2 px-md-4   btn-success">Expand<span
+                                    class="ml-1 d-none d-lg-inline">Signal</span>
                             </button>
                         </div>
 
@@ -137,7 +152,7 @@
                                 <div class="pt-md-5">
                                     <div class="py-4 text-center">
                                         <img src="./assets/img/iconleft.png" class=" w-10 text-center p-2" alt="">
-                                        <p class="h6 pb-3">View All Signals</p>
+                                        <p class=" small pb-3">View All Signals</p>
                                     </div>
                                 </div>
                             </a>
@@ -152,7 +167,7 @@
                 <div class="row justify-content-between">
                     <div class="col-md-6 mb-3">
                         <div class="card border-0 boxshadow2">
-                            <div class="dropdown border-0 card-header py-3 px-3 show d-flex justify-content-between" >
+                            <div class="dropdown border-0 card-header py-3 px-3 show d-flex justify-content-between">
                                 <div data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                     <span class="text-grey">
                                         Technical Analysis
@@ -173,7 +188,7 @@
                     <div class="col-md-6 mb-3">
                         <div class="boxshadow2">
                             <div class="card rounded-0 border-0">
-                                <div class=" dropdown card-header p-3 show d-flex justify-content-between" >
+                                <div class=" dropdown card-header p-3 show d-flex justify-content-between">
                                     <div data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <span class="text-grey">
                                             Fundamental Analysis
@@ -200,7 +215,7 @@
             <div class="container third">
                 <div class="card-deck">
                     <div class="col-md-8 p-0 card border-0  mb-4">
-                        <div class="card-header text-grey font-weight-bold" >
+                        <div class="card-header text-grey font-weight-bold">
                             Stock Updates
                         </div>
                         <div class="card-body maintainHeight">
@@ -376,7 +391,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 p-0  card border-0 pb-0 mb-4">
-                        <div class="card-header  text-grey font-weight-bold" >
+                        <div class="card-header  text-grey font-weight-bold">
                             Central bank news
                         </div>
                         <div class="card-body mb-0 maintainHeight">
@@ -463,6 +478,85 @@
     </footer>
     <!-- Portfolio Modals-->
 
+    <!-- First Pop up -->
+    <div class="modal fade shadow" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #222;">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Trade Signal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div class="container">
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-md-11 px-4">
+                                <div data-toggle="modal" data-target="#exampleModalLong">
+                                    <img style="cursor: zoom-in;" class="w-100 hover boxshadow2" src="./assets/img/chartboad2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 p-3 mr-md-3" style="background: #191919;box-sizing: border-box;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 3px;">
+                                <div v-for="(item, index) of content" :key="index" class="text-light">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="m-0">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui delectus quam doloremque modi, temporibus unde itaque odit omnis sunt vitae? Autem
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="text-left m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui delectus quam doloremque modi, temporibus unde itaque odit omnis sunt vitae? Autem
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <img src="assets/hrimage.png" class="w-100 m-0" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-5 p-3" style="background:#191919;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 3px">
+                                <p class="text-justify; text-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates blanditiis porro aperiam dolor aliquam est eum quos dolorem labore? Iste tempora unde dolorem molestias voluptatibus, explicabo et tempora unde dolorem molestias voluptatibus, explicabo
+                                    et quisquam quidem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <Disclaimer />
+
+                </div>
+                <div class="modal-footer text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="h6 font-weight-bold mb-0">Author:</p>
+                        <p>Chika Akosa</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary px-3" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Pop up -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content" style="background-color:white">
+                <div>
+                    <div id="cursor">
+                        <p class="h4 text-center py-2 text-dark font-weight-bold">Click on the image to zoom in</p>
+                        <figure id="magnify_area">
+                            <img id="magnify_image" src="./assets/img/chartboad22.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Bootstrap core JS-->
@@ -475,14 +569,7 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 400
-        });
-    </script> -->
+    <script src="./js/pop-up.js"></script>
 </body>
 
 </html>

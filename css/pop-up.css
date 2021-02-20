@@ -1,0 +1,19 @@
+#magnify_area {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#magnify_image {
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#magnify_image:hover {
+    cursor: zoom-in;
+}
