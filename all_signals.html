@@ -102,7 +102,7 @@
 
 <body id="page-to">
     <!-- Navigation-->
-    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top black1_bg" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
@@ -151,8 +151,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <ul class="mb-0 float-right d-inline-flex">
+                 <ul class="mb-0 float-md-right d-inline-flex  navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         My Account
@@ -165,10 +164,12 @@
                     </div>
                 </li>
             </ul>
+            </div>
+           
         </div>
     </nav>
 
-    <section class="page-section  black2_bg text-white">
+    <section class="page-section  black2_bg text-white mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 pt-4  my-3">
@@ -179,7 +180,7 @@
             </div>
         </div>
         <!-- First -->
-        <div class="container mb-3 mb-md-5">
+        <div class="container mb-3 mb-md-5 mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <form>
@@ -201,72 +202,60 @@
         </div>
 
         <div class="container my-4">
-            <div class="card-deck justify-content-around mb-5">
+            <div class="card-deck justify-content-center mb-5">
                 <div class="card col-md-3  bg-transparent boxshadow p-3">
                     <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+                        <p class="mb-1 text-muted signal-time">8:00 AM, Today </p>
+                        <img src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+                        
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                        <a href="./signal.html"><button class="btn mt-2 px-md-4  w-100 btn-success" >View Signal</button></a> 
                     </div>
 
                 </div>
                 <div class="card col-md-3 bg-transparent boxshadow p-3">
                     <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+                        <p class="mb-1 text-muted signal-time">9:00 AM, 21 Feb </p>
+                        <img  src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                        <a href="./signal.html"><button class="btn mt-2 px-md-4 w-100   btn-success" >View Signal</button></a> 
                     </div>
 
                 </div>
                 <div class="card col-md-3 bg-transparent boxshadow p-3">
                     <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
+                        <p class="mb-1 text-muted signal-time">7:54 PM, 21 Feb </p>
+                        <img  src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                        <a href="./signal.html"><button class="btn mt-2 px-md-4 w-100  btn-success" >View Signal</button></a>
                     </div>
 
                 </div>
             </div>
-            <div class="card-deck justify-content-around mb-5">
+            <div class="card-deck justify-content-center mb-5">
                 <div class="card col-md-3  bg-transparent boxshadow p-3">
                     <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
+                        <p class="mb-1 text-muted signal-time">8:00 PM, 20 Feb </p>
+                        <img  src="./assets/img/trade-signal.jpg" class="w-100 mb-2" alt="">
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="ml-1 d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                        <a href="./signal.html"><button class="btn mt-2 px-md-4  w-100  btn-success" >View Signal</button></a> 
                     </div>
 
                 </div>
                 <div class="card col-md-3 bg-transparent boxshadow p-3">
                     <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
+                        <p class="mb-1 text-muted signal-time">8:00 AM, 19 Feb </p>
+                        <img  src="./assets/img/Market-trend -dynamics.jpg" class="w-100 mb-2" alt="">
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="ml-1 d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                       <a href="./signal.html"><a href="./signal.html"><button class="btn mt-2 px-md-4   w-100 btn-success" >View Signal</button></a> </a> 
                     </div>
 
                 </div>
                 <div class="card col-md-3 bg-transparent boxshadow p-3">
-                    <div class="">
-                        <img onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);" src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
+                    <div class=""><p class="mb-1 text-muted signal-time">11:42 AM, 18 Feb </p>
+                        <img  src="./assets/img/technical-analysis.jpg" class="w-100 mb-2" alt="">
 
-                        <button @click="switchTechnical" class="btn mt-2 px-md-4   btn-success" onclick="createPopupWin('popup.html', 
-                            'popup', 1200, 650);">Expand<span class="d-none d-lg-inline ml-1">Signal</span>
-                        </button>
+                        <a href="./signal.html"><button class="btn mt-2 px-md-4  w-100  btn-success" >View Signal</button></a> 
                     </div>
 
                 </div>

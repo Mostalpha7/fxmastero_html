@@ -1,7 +1,7 @@
 var magnify_area = document.getElementById('magnify_area')
 var magnify_image = document.getElementById('magnify_image')
 
-magnify_area.addEventListener('mousemove', function(event) {
+magnify_area.addEventListener('onclick', function(event) {
     clientX = event.clientX - magnify_area.offsetLeft
     clientY = event.clientY - magnify_area.offsetTop
 
