@@ -10172,7 +10172,7 @@ img::-moz-selection {
 
 #mainNav .navbar-toggler {
     padding: 0.75rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: #fff;
     text-transform: uppercase;
     background-color: #fed136;
@@ -10236,11 +10236,10 @@ img::-moz-selection {
         margin-right: 0;
     }
 }
-
-header.masthead {
+.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    text-align: center;
+    text-align: left;
     color: #fff;
     background-image: url('../assets/img/banner.jpg');
     background-repeat: no-repeat;
@@ -10249,13 +10248,13 @@ header.masthead {
     background-size: cover;
 }
 
-header.masthead .masthead-subheading {
+.masthead .masthead-subheading {
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 25px;
 }
 
-header.masthead .masthead-heading {
+.masthead .masthead-heading {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
@@ -10265,32 +10264,65 @@ header.masthead .masthead-heading {
 
 
 @media(min-width: 768px) {
-    header.masthead {
+    .masthead {
         padding-top: 12rem;
         padding-bottom: 12.5rem;
     }
-    header.masthead .masthead-subheading {
+    .masthead .masthead-subheading {
         font-size: 2.25rem;
         line-height: 2.25rem;
         margin-bottom: 2rem;
     }
-    header.masthead .masthead-heading {
+    .masthead .masthead-heading {
         font-size: 4.5rem;
         font-weight: 700;
         line-height: 4.5rem;
         margin-bottom: 4rem;
     }
 
-    header.masthead .masthead-subheading p {
+    .masthead .masthead-subheading p {
         font-size: 2rem;
         line-height: 150%;
         max-width: 
 
 }
 
-header.masthead .masthead-subheading p span {
+.masthead .masthead-subheading span {
+    text-align: left;
     font-weight: 800;
     font-size: 4rem;
+    line-height: 100%;
+}
+}
+
+@media(max-width: 767px) {
+    .masthead {
+        padding-top: 12rem;
+        padding-bottom: 12.5rem;
+    }
+    .masthead .masthead-subheading {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .masthead .masthead-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .masthead .masthead-subheading p {
+        font-size: 1.5rem;
+        line-height: 100%;
+        max-width: 
+
+}
+
+.masthead .masthead-subheading span {
+    font-weight: 800;
+    text-align: left;
+    font-size: 3rem;
     line-height: 100%;
 }
 }
