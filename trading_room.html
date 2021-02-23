@@ -17,21 +17,16 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/mine.css">
-    <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-
 
 </head>
 
 <body id="page-to">
     <!-- Navigation-->
-    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top black1_bg" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="./index.html">
+            <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logos/logo.png" alt="" style="width: 100%; height:100%;" /></a>
-            <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars ml-1"></i>
-            </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav  m-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./premium.html">Home</a></li>
@@ -69,7 +64,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active" href="./trading_room.html">
+                        <a class="nav-link js-scroll-trigger" href="./trading_room.html">
                             Trading Room
                         </a>
                     </li>
@@ -80,17 +75,61 @@
                             My Account
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="./premium_profile.html">Profile</a>
                             <a class="dropdown-item" href="#">Billing & Invoices</a>
                             <a class="dropdown-item" href="#">Support</a>
                             <a class="dropdown-item" href="#">Log out</a>
                         </div>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <i class="fa fa-bell h5 text-white">
+                            </i>
+                        </a>
+                        <div class="dropdown-menu second" aria-labelledby="navbarDropdown">
+
+
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 4
+                                    </span>
+                                </div>
+                            </a>
+
+                            <a class="dropdown-item">
+                                <div class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 3
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 2
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 2
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
-             
+            <button class="navbar-toggler bg-transparent navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+
         </div>
     </nav>
+
 
     <section class="page-section  black1_bg text-white">
         <div class="container">
@@ -171,7 +210,28 @@
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
+
+    <!-- Modal -->
+    <div class="modal fade shadow  " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #222;">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Notification Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div class="p-5 boxshadow black1_bg">
+                        <h1 class="h3 mb-4 text-center text-white">Notification title</h1>
+                        <p class="text-white">
+                            Second Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique error pariatur commodi veritatis sit laborum animi voluptatum dolorem adipisci. Quod eum minus vel commodi illum possimus eos magnam officia sapiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -185,14 +245,7 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 400
-        });
-    </script> -->
 </body>
 
 </html>

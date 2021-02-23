@@ -17,14 +17,19 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/mine.css">
-    <!-- <link rel="stylesheet" href="./css/pricing_input.css"> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <style>
         .third .nav-link.active {
             background-color: transparent !important;
             color: black;
             border-bottom: 3px solid #037A14;
+        }
+        
+        .dropdown-menu.second {
+            position: absolute !important;
+            background-color: white;
+            float: left;
+            left: -100px !important;
         }
     </style>
 
@@ -79,17 +84,54 @@
                             Go Premium
                         </a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             My Account
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./free_profile.html">Profile</a>
-                            <a class="dropdown-item" href="./free_notification.html">Notifications</a>
                             <a class="dropdown-item" href="#">Billing & Invoices</a>
                             <a class="dropdown-item" href="#">Support</a>
                             <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <i class="fa fa-bell h5 text-white">
+                            </i>
+                        </a>
+                        <div class="dropdown-menu second" aria-labelledby="navbarDropdown">
+
+
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 4
+                                    </span>
+                                </div>
+                            </a>
+
+                            <a class="dropdown-item">
+                                <div class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 3
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 2
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+                                    <span class="text-dark">
+                                        Notification 2
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -416,8 +458,27 @@
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
-
+    <!-- Modal -->
+    <div class="modal fade shadow  " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #222;">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Notification Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div class="p-5 boxshadow black1_bg">
+                        <h1 class="h3 mb-4 text-center text-white">Notification title</h1>
+                        <p class="text-white">
+                            Second Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique error pariatur commodi veritatis sit laborum animi voluptatum dolorem adipisci. Quod eum minus vel commodi illum possimus eos magnam officia sapiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JS-->
@@ -430,14 +491,7 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 400
-        });
-    </script> -->
 </body>
 
 </html>

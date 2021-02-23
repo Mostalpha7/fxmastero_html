@@ -108,5 +108,18 @@
     opacity: 0.5;
 }
 
+.card p {
+    color: #eee;
+    text-transform: initial !important;
+    font-size: 1em;
+}
+
+.dropdown-menu.second {
+    position: absolute !important;
+    background-color: white;
+    float: left;
+    left: -100px !important;
+}
+
 
 /* Responsive Elements */
