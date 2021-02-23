@@ -121,5 +121,9 @@
     left: -100px !important;
 }
 
+.hide {
+    display: none;
+}
+
 
 /* Responsive Elements */
