@@ -4758,13 +4758,27 @@ input[type='button'].btn-block {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
+    display: inline-block;
+    font-size:0.8em;
 
+}
+
+.card-body:nth-child(odd) {
+    background-color:#111;
+}
+
+.card-body:nth-child(even) {
+    background-color:#1a1a1a;
+}
+
+.card-body h4 {
+    font-size:;
 }
 
 .card p {
     color:#eee;
     text-transform: uppercase;
-    font-size:1em;
+    
 }
 .card-title {
     margin-bottom: 0.75rem;
