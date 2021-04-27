@@ -103,9 +103,9 @@
                             My Account
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./premium_profile.html">Profile</a>
-                            <a class="dropdown-item" href="#">Billing & Invoices</a>
-                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="./premium_profile.html#the_profile">Profile</a>
+                            <a class="dropdown-item" href="./premium_profile.html#the_billing">Billing & Invoices</a>
+                            <a class="dropdown-item" href="./premium_profile.html#the_support">Support</a>
                             <a class="dropdown-item" href="#">Log out</a>
                         </div>
                     </li>
@@ -174,13 +174,13 @@
                                     <div class="">
                                         <ul class="nav d-flex justify-content-center no- nav-pills mb-3 " id="pills-tab" role="tablist">
                                             <li class="nav-item  px-1 text-center" style="flex:1">
-                                                <a class="nav-link text-grey active" id="pills-active-tab" data-toggle="pill" href="#my-profile" role="tab" aria-controls="pills-home" aria-selected="true">
+                                                <a id="the_profile" class="nav-link text-grey active" id="pills-active-tab" data-toggle="pill" href="#my-profile" role="tab" aria-controls="pills-home" aria-selected="true">
                                                     <span class="text-white">My Profile
                                                     </span>
                                                 </a>
                                             </li>
                                             <li class="nav-item  px-1 text-center" style="flex:1">
-                                                <a class="nav-link text-dark" id="pills-gainers-tab" data-toggle="pill" href="#billing-invoices" role="tab" aria-controls="pills-gainers" aria-selected="false">
+                                                <a id="the_billing" class="nav-link text-dark" id="pills-gainers-tab" data-toggle="pill" href="#billing-invoices" role="tab" aria-controls="pills-gainers" aria-selected="false">
                                                     <span class="text-white">
                                                         Billing & Invoices
                                                     </span>
@@ -194,7 +194,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item  px-1 text-center" style="flex:1">
-                                                <a class="nav-link text-dark" id="pills-support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                                <a id="the_support" class="nav-link text-dark" id="pills-support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="pills-contact" aria-selected="false">
                                                     <span class="text-white">
                                                         Support
                                                     </span>
@@ -257,7 +257,6 @@
                                                     </form>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <div class="tab-pane fade" id="billing-invoices" role="tabpanel" aria-labelledby="pills-gainers-tab">
                                             <div>
@@ -532,6 +531,7 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/profile_tweak.js"></script>
+    <script src="js/handler_profile_display.js"></script>
 </body>
 
 </html>
