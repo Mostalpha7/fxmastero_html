@@ -137,6 +137,12 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-10 col-xl-8">
+                    <div>
+                        <select id="currency" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option value="$">USD</option>
+                            <option value="&#8358">NGN</option>
+                        </select>
+                    </div>
 
                     <div class="text-center mb-5">
                         <span class="text-white ml-md-5 pl-md-3">Monthly</span>
@@ -153,7 +159,7 @@
                                     Free
                                 </p>
                                 <p class="py-0 my-0 text-center">
-                                    <span>$</span>
+                                    <span class="curr">$</span>
                                     <span class="h1 text-white font-weight-bold">0</span>
                                     <span>/ Month</span>
                                 </p>
@@ -287,7 +293,7 @@
                                     Premium
                                 </p>
                                 <p class="py-0 my-0 text-center">
-                                    <span>
+                                    <span class="curr">
                                         $
                                     </span>
                                     <span id="premuimPrice" class="h1 text-white font-weight-bold">75</span>
@@ -479,6 +485,12 @@
             }
             document.getElementById('premuimPrice').innerHTML = premuimPrice
         }
+
+            $('#currency').change(function() {
+      currency = $( "#currency option:checked" ).val();
+      $('.curr').html(currency);
+    });
+        
     </script>
 </body>
 
