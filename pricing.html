@@ -105,20 +105,20 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Contact</a></li>
 
                 </ul>
-                 <ul class="mb-0 float-md-right d-inline-flex  navbar-nav">
-                <li class="nav-items mb-2 mb-md-0  mr-2">
-                    <a href="./login.html" class="btn btn-outline-success px-4">
+                <ul class="mb-0 float-md-right d-inline-flex  navbar-nav">
+                    <li class="nav-items mb-2 mb-md-0  mr-2">
+                        <a href="./login.html" class="btn btn-outline-success px-4">
                         Login
                     </a>
-                </li>
-                <li class>
-                    <a href="./pricing.html" class="btn btn-danger px-4">
+                    </li>
+                    <li class>
+                        <a href="./pricing.html" class="btn btn-danger px-4">
                         Sign Up
                     </a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
             </div>
-           
+
         </div>
     </nav>
 
@@ -137,7 +137,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-10 col-xl-8">
-                
+
 
                     <div class="text-left mb-5">
                         <span class="text-white ml-md-5 pl-md-3">Monthly</span>
@@ -148,8 +148,8 @@
                         <span class="text-white">Yearly (save 25%)</span>
 
                         <select id="currency" class="form-select form-select-lg mb-3 float-right px-3 py-2 rounded-pill">
-                            <option value="$">USD</option>
-                            <option value="&#8358">NGN</option>
+                            <option value="usd">USD</option>
+                            <option value="ngn">NGN</option>
                         </select>
                     </div>
                     <div class="card-group">
@@ -297,7 +297,7 @@
                                         $
                                     </span>
                                     <span id="premuimPrice" class="h1 text-white font-weight-bold">75</span>
-                                    <span>/ Month</span>
+                                    <span></span>
                                 </p>
                             </div>
                             <div class="card-body section1 px-5 py-4 pb-5 px-4 d-flex align-items- flex-column">
@@ -392,7 +392,7 @@
                                         </p>
                                     </div>
                                     <hr class="mt-1 py-0 bg-dark text-muted" style="height:.003rem">
-                                    
+
                                 </div>
                                 <div class="text-center  mt-auto">
                                     <a href="./sign-up-premium.html" to="/registerpremium">
@@ -474,23 +474,21 @@
             duration: 400
         });
     </script> -->
-    <script>
-        var theSwitch = document.getElementById("swith");
-        var premuimPrice = document.getElementById('premuimPrice').innerHTML;
-        theSwitch.onchange = () => {
-            if (premuimPrice == 75) {
-                premuimPrice = 100;
-            } else {
-                premuimPrice = 75
-            }
-            document.getElementById('premuimPrice').innerHTML = premuimPrice
-        }
+    <script src="js/pricing_price.js">
+        // $('#currency').change(function() {
+        //     var currentPrice = document.getElementById('premuimPrice').innerHTML;
+        //     currency = $("#currency option:checked").val();
+        //     if (currency == 'ngn') {
+        //         $('.curr').html('&#8358');
+        //         currentPrice = parseFloat(currentPrice) * 480;
 
-            $('#currency').change(function() {
-      currency = $( "#currency option:checked" ).val();
-      $('.curr').html(currency);
-    });
-        
+        //     } else {
+        //         $('.curr').html('$');
+        //         currentPrice = parseFloat(currentPrice) * 480;
+        //     }
+        //     console.log(currentPrice);
+        //     document.getElementById('premuimPrice').innerHTML = currentPrice
+        // });
     </script>
 </body>
 
